@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
-        int luachon = -1;
+        int luachon = 5 ;
        Scanner s = new Scanner(System.in);
 
         while (luachon != 0) {
@@ -15,14 +15,20 @@ public class Menu {
 
             if (luachon ==1) {
                     System.out.println("in hinh tam giac");
+                for(int i=1;i<6;i++){
+                    for(int j=1;j<6-i;j++){
+                        System.out.print(" * ");
+                        }
+                    System.out.println(" ");
+                    }
+                for (int i = 1; i < 6; i++) {
+                    for(int j =1; j < i; j++){
+                        System.out.print(" * ");
+                    }
+                    System.out.println(" ");
+                }
+                }
 
-                    System.out.println("******");
-                    System.out.println("*****");
-                    System.out.println("****");
-                    System.out.println("***");
-                    System.out.println("**");
-                    System.out.println("*");
-            }
             if(luachon == 2){
                 System.out.println("in hinh vuong");
                 for(int j=1; j<5; j++){
@@ -38,9 +44,7 @@ public class Menu {
             if(luachon == 0){
                 System.exit(0);
             }
-            else {
-                System.out.println("khong co lua chon phu hop.");
-            }
+
         }
     }
 }
